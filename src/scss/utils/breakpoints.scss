@@ -1,0 +1,22 @@
+$breakpoints: (
+  "sx": 411px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1366px,
+  "xxl": 1536px,
+  "xxxl": 1920px,
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    +"Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+body {
+  padding: 110px;
+}

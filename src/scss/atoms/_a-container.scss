@@ -1,0 +1,19 @@
+.a-container {
+  padding-left: rem(30);
+  padding-right: rem(30);
+  @include breakpoint(md) {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 688px;
+    margin: 0 auto;
+  }
+  @include breakpoint(lg) {
+    max-width: 734px;
+  }
+  @include breakpoint(xl) {
+    max-width: 926px;
+  }
+  @include breakpoint(xxl) {
+    max-width: 980px;
+  }
+}

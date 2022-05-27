@@ -1,0 +1,24 @@
+.a-top {
+  padding-top: rem(30);
+  @include breakpoint(md) {
+    padding-top: rem(40);
+  }
+  @include breakpoint(lg) {
+    padding-top: rem(60);
+  }
+  @include breakpoint(xxl) {
+    padding-top: rem(96);
+  }
+}
+.a-bottom {
+  padding-top: rem(30);
+  @include breakpoint(md) {
+    padding-top: rem(40);
+  }
+  @include breakpoint(lg) {
+    padding-top: rem(60);
+  }
+  @include breakpoint(xxl) {
+    padding-top: rem(96);
+  }
+}

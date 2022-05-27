@@ -1,0 +1,12 @@
+.a-button {
+  width: fit-content;
+  padding: rem(16) rem(40);
+  display: block;
+  background-color: $primary;
+  font-size: rem(16);
+  line-height: 1;
+  font-weight: 700;
+  border-radius: rem(32);
+  border: none;
+  color: $white;
+}

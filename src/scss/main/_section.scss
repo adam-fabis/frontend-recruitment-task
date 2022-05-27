@@ -1,0 +1,38 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(40);
+  &__img {
+    display: block;
+    position: relative;
+    padding-top: 100%;
+    & img {
+      position: absolute;
+      width: 100% !important;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+  }
+  @include breakpoint(md) {
+    &__img {
+      padding-top: 66.45%;
+    }
+  }
+  @include breakpoint(lg) {
+    flex-direction: row;
+    justify-content: space-between;
+    &__img {
+      width: 51.54%;
+      padding-top: calc((51.54 * 65.35%) / 100);
+    }
+    &__content {
+      width: 38.78%;
+    }
+  }
+}

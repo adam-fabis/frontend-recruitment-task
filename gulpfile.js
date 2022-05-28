@@ -12,7 +12,7 @@ sass.compiler = require("sass");
 
 // File paths
 const files = {
-  scssPath: "src/scss/**/*.sass",
+  scssPath: "src/scss/**/*.scss",
   jsPath: "src/js/**/*.js",
 };
 

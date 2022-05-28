@@ -1,0 +1,52 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+  max-width: 80%;
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+    position: absolute;
+    padding: rem(25);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 63.88%;
+    background-color: $white;
+  }
+  &__close {
+    cursor: pointer;
+    font-size: rem(20);
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    transform: translate(50%, -50%);
+    border: none;
+    background-color: transparent;
+  }
+  &__overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(18, 18, 18, 0.5);
+    pointer-events: none;
+  }
+  &__overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

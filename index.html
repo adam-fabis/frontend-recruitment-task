@@ -33,15 +33,35 @@
           />
         </picture>
         <div class="section__content">
-          <h1 class="a-title section__title">Lorem Ipsum</h1>
-          <p class="a-description section__description">
+          <h1 class="a-title dark section__title">Lorem Ipsum</h1>
+          <p class="a-description dark section__description">
             Infinitely scalable, feature-rich and cloud-native data management
             and protection for modern and legacy infrastructures and SaaS
             platforms, managed via a single app with no hardware required.
           </p>
-          <button class="a-button section__button">Button</button>
+          <button
+            data-modal-target="#modal"
+            class="a-button white section__button"
+          >
+            Button
+          </button>
         </div>
       </section>
     </main>
+    <div class="modal" id="modal">
+      <div class="modal__body">
+        <button data-close-button class="close-button modal__close">
+          &times;
+        </button>
+
+        <h2 class="a-title">Alert!</h2>
+        <p class="a-description">
+          You have clicked <span>X times</span> to related button
+        </p>
+      </div>
+    </div>
+    <div class="modal__overlay" id="overlay"></div>
+
+    <script src="dist/all.js"></script>
   </body>
 </html>
